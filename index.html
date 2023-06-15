@@ -1,7 +1,135 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta http-equiv="refresh" content="0; url='https://za-media.ru/'" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Медиахолдинг "За!Медиа"</title>
+    <meta property="og:description" content='Медиахолдинг "За!Медиа"' />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
   </head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-<?=$ch["analytics"]?>"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '<?=$ch["analytics"]?>'); gtag('config', 'UA-151879781-3');
+    </script>
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: #41cfff;
+      height: 70px;
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 30px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+    }
+    .social-item {
+      text-decoration: none;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      margin-right: 10px;
+    }
+    .social-item:last-child {
+      margin-right: 0;
+    }
+    .social-item img {
+      width: 100%;
+      padding: 8px;
+    }
+
+    main {
+      min-height: calc(100vh - 150px);
+    }
+
+    .player {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #fff;
+      background: #1b1b1b;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .text-container {
+      min-height: calc(100vh - 200px);
+      display: flex;
+      align-items: center;
+    }
+
+    .text {
+      margin: 0 auto;
+      max-width: 650px;
+      font-size: 24px;
+      line-height: 1.3;
+      text-align: center;
+    }
+    
+  </style>
+
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="https://za-media.ru/wp-content/themes/zapnews/images/logo_zamedia.svg" alt="" />
+        </div>
+        <div class="social">
+          <a class="social-item" href="https://www.vk.com/za_tv_ru" target="_blank" rel="nofollow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/150px-VK_Compact_Logo_%282021-present%29.svg.png" alt="vk" />
+          </a>
+          <a class="social-item" href="https://t.me/za_tv_ru" target="_blank" rel="nofollow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/150px-Telegram_logo.svg.png" alt="telegram" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="player">
+          <div class="text-container">
+            <div class="text">
+              Сайты За!Медиа подверглись хакерской атаке. Наша техническая команда работает над возобновлением работы. Извиняемся за временные неудобства.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>@ 2023 За!Медиа</footer>
+</body>
 </html>
